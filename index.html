@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fff9ed">
+  <meta name="description" content="ONRIONIS — концепція цифрових активів із фокусом на захист, контроль власника та багаторівневу перевірку операцій.">
+  <title>ONRIONIS — Digital Asset Security</title>
+  <style>
+    :root{color-scheme:light;--ink:#192847;--muted:#52617b;--blue:#1963de;--border:#e7e7e6;--gold:#ffb82e}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:linear-gradient(135deg,#fffbf1 0%,#fff 45%,#eaf6ff 100%);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+    header{padding:18px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(25,40,71,.08);background:rgba(255,255,255,.8)}
+    .brand{font-size:25px;font-weight:850;letter-spacing:2px;color:#164db7}
+    .brand .star{color:#ffab1d}
+    button{background:#fff;color:#174ba0;border:1px solid #b9cbe9;border-radius:13px;padding:10px 18px;font-weight:700;cursor:pointer;box-shadow:0 3px 12px rgba(31,80,148,.08)}
+    button:hover,button:focus-visible{background:#e9f3ff;outline:2px solid #9dc4fa;outline-offset:2px}
+    main{max-width:1120px;margin:auto;padding:76px 7% 86px}
+    .hero{position:relative;isolation:isolate}
+    .hero:before{content:"";position:absolute;z-index:-1;right:-6%;top:-55px;width:min(38vw,350px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#ffdb76 0%,#ffedb9 38%,rgba(255,237,185,0) 72%);opacity:.9;pointer-events:none}
+    h1{font-size:clamp(40px,7vw,76px);line-height:1.08;letter-spacing:-.035em;margin:18px 0 25px;font-weight:850}
+    h1 span{color:#1663d4}
+    .eyebrow{color:#ce7d09;letter-spacing:2px;text-transform:uppercase;font-size:12px;font-weight:800}
+    p{max-width:720px;color:var(--muted);font-size:18px}
+    .status{display:inline-block;background:#e6f7ef;border:1px solid #b0e8c9;border-radius:99px;padding:8px 16px;font-size:13px;color:#196c46;font-weight:700;margin-top:12px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:64px 0 46px}
+    .card{padding:27px;background:rgba(255,255,255,.94);border:1px solid #dfebfa;border-radius:20px;box-shadow:0 16px 40px rgba(38,94,160,.09);border-top:5px solid #ffbc49}
+    .card:nth-child(2){border-top-color:#56b8e9}.card:nth-child(3){border-top-color:#70d6aa}
+    .card h3{margin:0 0 10px;color:#193d83;font-size:21px}
+    .card p{font-size:15px;margin:0;line-height:1.65}
+    section{padding:10px 0}
+    h2{font-size:clamp(27px,4vw,35px);letter-spacing:-.02em;margin:8px 0 10px}
+    .note{font-size:14px;color:#5e6472;border-left:4px solid #ffbb48;background:#fff7e8;padding:18px 20px;margin-top:34px;border-radius:0 12px 12px 0;max-width:850px}
+    footer{border-top:1px solid #e0eaf4;padding:29px 7%;color:#6b7891;font-size:13px;background:rgba(255,255,255,.7)}
+    @media(max-width:720px){main{padding:52px 7% 66px}.grid{grid-template-columns:1fr;gap:14px;margin:45px 0}header{padding:16px 7%}.brand{font-size:21px}.hero:before{right:-6%;top:-20px;width:200px;opacity:.45}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<header><div class="brand"><span class="star">✦</span> ONRIONIS</div><button id="lang" type="button" onclick="toggle()" aria-label="Switch language">EN</button></header>
+<main>
+  <div class="hero">
+    <div class="eyebrow" data-uk="Майбутнє захисту цифрових активів" data-en="The future of digital asset security">Майбутнє захисту цифрових активів</div>
+    <h1 data-uk="ONRIONIS.<br><span>Безпека — наша мета.</span>" data-en="ONRIONIS.<br><span>Security is our mission.</span>">ONRIONIS.<br><span>Безпека — наша мета.</span></h1>
+    <p data-uk="Ми розробляємо концепцію цифрової валюти, у центрі якої — захист активів, контроль власника та багаторівнева перевірка операцій." data-en="We are developing a digital currency concept focused on asset protection, owner control, and multi-layer transaction verification.">Ми розробляємо концепцію цифрової валюти, у центрі якої — захист активів, контроль власника та багаторівнева перевірка операцій.</p>
+    <div class="status" data-uk="Концепція • На стадії розробки" data-en="Concept • In development">Концепція • На стадії розробки</div>
+  </div>
+  <div class="grid">
+    <div class="card"><h3 data-uk="12 рівнів захисту" data-en="12 security layers">12 рівнів захисту</h3><p data-uk="Запропонована багаторівнева архітектура, яку ще потрібно спроєктувати й перевірити." data-en="A proposed multi-layer architecture that still requires engineering and testing.">Запропонована багаторівнева архітектура, яку ще потрібно спроєктувати й перевірити.</p></div>
+    <div class="card"><h3 data-uk="Три дозволи" data-en="Three approvals">Три дозволи</h3><p data-uk="Концепція послідовного підтвердження перед переказом активів." data-en="A concept for sequential approvals before transferring assets.">Концепція послідовного підтвердження перед переказом активів.</p></div>
+    <div class="card"><h3 data-uk="ONRIONIS KEY" data-en="ONRIONIS KEY">ONRIONIS KEY</h3><p data-uk="Ідея персонального криптографічного брелока для підтвердження клієнта." data-en="A concept for a personal cryptographic key fob to authenticate customers.">Ідея персонального криптографічного брелока для підтвердження клієнта.</p></div>
+  </div>
+  <section>
+    <h2 data-uk="Наше бачення" data-en="Our vision">Наше бачення</h2>
+    <p data-uk="Ми прагнемо створити одну з найбільш захищених систем цифрових активів у світі. Для цього потрібні відкриті технічні специфікації, незалежний аудит і реальні випробування." data-en="We aim to build one of the world's most secure digital asset systems. This requires technical specifications, independent audits, and real-world testing.">Ми прагнемо створити одну з найбільш захищених систем цифрових активів у світі. Для цього потрібні відкриті технічні специфікації, незалежний аудит і реальні випробування.</p>
+    <div class="note" data-uk="ONRIONIS поки не є запущеною валютою чи інвестиційною пропозицією. Токен не випущено; безпекові властивості ще не підтверджені аудитом." data-en="ONRIONIS is not yet a launched currency or an investment offer. No token has been issued; security claims have not been independently audited.">ONRIONIS поки не є запущеною валютою чи інвестиційною пропозицією. Токен не випущено; безпекові властивості ще не підтверджені аудитом.</div>
+  </section>
+</main>
+<footer>© 2026 ONRIONIS • Concept preview / Попередній макет</footer>
+<script>
+let en=false;
+function toggle(){
+  en=!en;
+  document.documentElement.lang=en?'en':'uk';
+  document.querySelectorAll('[data-uk]').forEach(el=>{el.innerHTML=el.dataset[en?'en':'uk']});
+  const button=document.getElementById('lang');
+  button.textContent=en?'UA':'EN';
+  button.setAttribute('aria-label',en?'Перемкнути на українську':'Switch to English');
+}
+</script>
+</body>
+</html>
